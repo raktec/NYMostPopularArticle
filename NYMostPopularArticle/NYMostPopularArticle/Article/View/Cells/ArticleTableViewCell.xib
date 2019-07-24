@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleTableViewCell" rowHeight="107" id="hQY-YY-t8s" customClass="ArticleTableViewCell" customModule="NYMostViewArticle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="107"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hQY-YY-t8s" id="flG-kD-p5g">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="106.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="110" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="50w-fr-4xr" userLabel="Article Image">
+                        <rect key="frame" x="20" y="28.5" width="50" height="50"/>
+                        <color key="backgroundColor" red="0.66666666669999997" green="0.65098039220000004" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="BIp-j7-5pF">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                            <constraint firstAttribute="height" constant="50" id="Oum-z6-RDw">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="111" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supporters of the Democratic candidate Jon Ossoff after he won" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmY-LM-RU0" userLabel="Title">
+                        <rect key="frame" x="80" y="5" width="272" height="43"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="112" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="By DAVID LEONHARDT and STUART SSNJJS JSJJJJHSSS" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdY-yp-f5f" userLabel="Author">
+                        <rect key="frame" x="80" y="63.5" width="181" height="28"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.65098039220000004" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" tag="114" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calender.png" translatesAutoresizingMaskIntoConstraints="NO" id="JBr-Ck-DmK" userLabel="CalenderIcon">
+                        <rect key="frame" x="261" y="66.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="71v-nM-LnE"/>
+                            <constraint firstAttribute="height" constant="20" id="dPB-MI-Yp8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="113" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="2017-06-03" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Pc-H8-HNf" userLabel="PublishDate">
+                        <rect key="frame" x="281" y="63.5" width="65" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="65" id="E0I-wO-5Qg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.65098039220000004" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4Pc-H8-HNf" firstAttribute="trailing" secondItem="KmY-LM-RU0" secondAttribute="trailing" constant="-6" id="3NH-rx-6Mx"/>
+                    <constraint firstItem="4Pc-H8-HNf" firstAttribute="bottom" secondItem="fdY-yp-f5f" secondAttribute="bottom" id="IZ0-fq-UWJ"/>
+                    <constraint firstItem="50w-fr-4xr" firstAttribute="leading" secondItem="flG-kD-p5g" secondAttribute="leading" constant="20" id="Jkc-Qs-CeE">
+                        <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                    </constraint>
+                    <constraint firstItem="KmY-LM-RU0" firstAttribute="top" secondItem="flG-kD-p5g" secondAttribute="top" constant="5" id="UVT-GL-48w">
+                        <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                    </constraint>
+                    <constraint firstItem="4Pc-H8-HNf" firstAttribute="leading" secondItem="JBr-Ck-DmK" secondAttribute="trailing" id="V4k-48-9eA"/>
+                    <constraint firstItem="KmY-LM-RU0" firstAttribute="leading" secondItem="50w-fr-4xr" secondAttribute="trailing" constant="10" id="XNy-t1-IT2"/>
+                    <constraint firstAttribute="bottom" secondItem="fdY-yp-f5f" secondAttribute="bottom" constant="15" id="afJ-cP-YW5">
+                        <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                    </constraint>
+                    <constraint firstItem="JBr-Ck-DmK" firstAttribute="centerY" secondItem="4Pc-H8-HNf" secondAttribute="centerY" constant="-1" id="kIM-Ra-GdJ"/>
+                    <constraint firstAttribute="trailing" secondItem="KmY-LM-RU0" secondAttribute="trailing" constant="14" id="qlB-QJ-Po8">
+                        <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                    </constraint>
+                    <constraint firstItem="4Pc-H8-HNf" firstAttribute="top" secondItem="fdY-yp-f5f" secondAttribute="top" id="uvW-Jh-CmC"/>
+                    <constraint firstItem="50w-fr-4xr" firstAttribute="centerY" secondItem="flG-kD-p5g" secondAttribute="centerY" id="v6H-1o-YxN"/>
+                    <constraint firstItem="fdY-yp-f5f" firstAttribute="top" secondItem="KmY-LM-RU0" secondAttribute="bottom" constant="15.5" id="wgx-cz-c1M"/>
+                    <constraint firstItem="JBr-Ck-DmK" firstAttribute="leading" secondItem="fdY-yp-f5f" secondAttribute="trailing" id="yDO-kf-j8R"/>
+                    <constraint firstItem="fdY-yp-f5f" firstAttribute="leading" secondItem="KmY-LM-RU0" secondAttribute="leading" id="zY1-vf-PZQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="articleImageView" destination="50w-fr-4xr" id="TNa-bD-GB9"/>
+                <outlet property="articleNameLabel" destination="KmY-LM-RU0" id="Quq-Ce-wxQ"/>
+                <outlet property="authorLabel" destination="fdY-yp-f5f" id="Tst-Fp-AnU"/>
+                <outlet property="publishDateLabel" destination="4Pc-H8-HNf" id="xa6-Cg-oOJ"/>
+            </connections>
+            <point key="canvasLocation" x="145.59999999999999" y="147.97601199400302"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calender.png" width="16" height="16"/>
+    </resources>
+</document>
